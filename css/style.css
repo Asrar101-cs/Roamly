@@ -148,13 +148,17 @@ body{
     left: 0px;
     background-color:  rgb(8, 58, 105);
 }
-.dropdown-menu{
+.dropdown-menu {
     margin-top: 7px;
-    width:  160px;
+    width: 160px;
     height: 170px;
-    border: none;
-    display: none;
-    transition: 0.9s;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    border: 1px solid rgb(24, 144, 160);
+    background-color: white;
 }
 .dropdown-menu a {
   display: inline-block ;
@@ -162,7 +166,7 @@ body{
 .dropdown-menu a::after {
     content: "";
     height: 2px;
-    bottom: 5px;
+    bottom: 2px;
     left: 9px;
     width: 0;
     background-color: rgb(8, 58, 105);
@@ -172,9 +176,9 @@ body{
     width: 90%;
 }
 .dropdown:hover .dropdown-menu {
-    border: 1px solid  rgb(24, 144, 160)  ;
-    display: block;
-    transition: 2s;
+    opacity: 1;
+    visibility: visible;
+
 }
 .dropdown:hover .dropdown-menu  a{
     margin: 8px 0px;
