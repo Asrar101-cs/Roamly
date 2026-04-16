@@ -156,7 +156,7 @@ body{
     left: 0;
     opacity: 0;
     visibility: hidden;
-    transition: 0.3s;
+    transition: 0.1s;
     border: 1px solid rgb(24, 144, 160);
     background-color: white;
 }
@@ -178,7 +178,6 @@ body{
 .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
-
 }
 .dropdown:hover .dropdown-menu  a{
     margin: 8px 0px;
